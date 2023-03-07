@@ -1,0 +1,54 @@
+.RegisterFormContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(60, 147, 219);
+    max-width: 450px;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    border-left:solid 3px rgb(215, 237, 255);
+    border-top:solid 3px rgb(215, 237, 255);
+    border-right:solid 3px rgb(76, 127, 168);
+    border-bottom:solid 3px rgb(76, 127, 168);
+}
+.RegisterFormContainer > form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-width: 400px;
+    background-color: rgb(53, 133, 199);
+    border-right:solid 3px rgb(215, 237, 255);
+    border-bottom:solid 3px rgb(215, 237, 255);
+    border-left:solid 3px rgb(76, 127, 168);
+    border-top:solid 3px rgb(76, 127, 168);
+}
+.RegisterFormContainer > form > span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border-bottom:dashed 1px black;
+}
+.RegisterFormContainer > form > span > label {
+    max-width: 120px;
+}
+.RegisterFormContainer > form > span > input {
+    min-width: 200px;
+}
+.RegisterFormContainer > form > button {
+    align-self: center;
+    min-width: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(159, 194, 223);
+    border-left:solid 3px rgb(215, 237, 255);
+    border-top:solid 3px rgb(215, 237, 255);
+    border-right:solid 3px rgb(76, 127, 168);
+    border-bottom:solid 3px rgb(76, 127, 168);
+}
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
