@@ -78,6 +78,7 @@ const Register = () => {
             //TODO handle token, save somewere, idn...
             setSuccess(true);
             //TODO set fields to default
+            setSuccessMessage("Rejestracja przebiegła pomyślnie")
         } catch (error) {
             const e = error as AxiosError;
             if (!e?.response) {
@@ -118,7 +119,7 @@ const Register = () => {
                                 onBlur={() => setEmailFocus(false)}
                             />
                             <p id="uidnote" className={emailFocus && email && !validEmail ? "instructions" : "offscreen"}>
-                                Must contain '@'
+                                Musi zawierać "@".
                             </p>
                         </span>
                         <span>
@@ -162,7 +163,7 @@ const Register = () => {
                                 onBlur={() => setPasswordFocus(false)}
                             />
                             <p id="pwdnote" className={passwordFocus && !validPassword ? "instructions" : "offscreen"}>
-                                Must contain '@'
+                                Musi zawierać małą i dużą literę, znak specjalny i cyfrę
                             </p>
                         </span>
                         <span>
@@ -180,7 +181,7 @@ const Register = () => {
                                 onBlur={() => setMatchPasswordFocus(false)}
                             />
                             <p id="mpwdnote" className={matchPassFocus && !validMatch ? "instructions" : "offscreen"}>
-                                Must contain '@'
+                                Hasła powinny być takie same
                             </p>
                         </span>
                         <button disabled={!validEmail || !validPassword || !validMatch || !firstname || !lastname ? true : false}>Zarejestruj się</button>
