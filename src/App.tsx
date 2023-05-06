@@ -1,24 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import RequireAuth from './content/RequireAuth';
+import Register from './user/Register';
+import Login from './user/Login';
+import Home from './content/Home';
+import Layout from './content/Layout';
+import Messenger from './content/Messenger';
+import Announcements from './content/Announcements';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+            <Route path="messenger" element={<Messenger />} />
+            <Route path="announcements" element={<Announcements />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

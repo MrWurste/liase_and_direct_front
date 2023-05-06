@@ -28,10 +28,100 @@
   color: #61dafb;
 }
 
+html {
+  background-color: rgb(142, 177, 252);
+}
+.Logo {
+  font-size: 25px;
+  font-weight: bolder;
+}
+.List {
+  background-color: rgb(60, 147, 219);
+  max-width: 450px;
+  margin: auto;
+  margin-top: 30px;
+  padding-bottom: 5px;
+  border-left: solid 3px rgb(215, 237, 255);
+  border-top: solid 3px rgb(215, 237, 255);
+  border-right: solid 3px rgb(76, 127, 168);
+  border-bottom: solid 3px rgb(76, 127, 168);
+}
+
+.List>ul {
+  list-style: none;
+  margin: auto;
+  max-width: 350px;
+  max-width: 350px;
+  background-color: rgb(53, 133, 199);
+  border-right: solid 3px rgb(215, 237, 255);
+  border-bottom: solid 3px rgb(215, 237, 255);
+  border-left: solid 3px rgb(76, 127, 168);
+  border-top: solid 3px rgb(76, 127, 168);
+}
+.List>ul>li {
+  margin: auto;
+  margin-right: 30px;
+  max-width: 330px;
+  min-width: 330px;
+    border-bottom:dashed 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.MessangerContainer {
+  background-color: rgb(128, 168, 255);
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 15px;
+}
+.AnnouncementContainer {
+  background-color: rgb(128, 168, 255);
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 15px;
+}
+.NavBar {
+  background-color: rgba(128, 168, 255, 0.527);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.NavBar>Link {
+  text-decoration: none;
+}
+.ListA>ul {
+  list-style: none;
+  margin: auto;
+  max-width: 350px;
+  max-width: 350px;
+  background-color: rgb(53, 133, 199);
+  border-right: solid 3px rgb(215, 237, 255);
+  border-bottom: solid 3px rgb(215, 237, 255);
+  border-left: solid 3px rgb(76, 127, 168);
+  border-top: solid 3px rgb(76, 127, 168);
+}
+.ListA>ul>li {
+   margin: auto;
+  margin-right: 30px;
+  max-width: 330px;
+  min-width: 330px;
+    border-bottom:dashed 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
