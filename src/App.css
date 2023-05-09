@@ -29,14 +29,14 @@
 }
 
 html {
-  background-color: rgb(142, 177, 252);
+  background-color: #f8f9fa;
 }
 .Logo {
   font-size: 25px;
   font-weight: bolder;
 }
 .List {
-  background-color: rgb(60, 147, 219);
+  background-color: #007bff;
   max-width: 450px;
   margin: auto;
   margin-top: 30px;
@@ -70,36 +70,47 @@ html {
 }
 
 .MessangerContainer {
-  background-color: rgb(128, 168, 255);
+  background-color: #f8f9fa;
+  border:3px solid #6c757d;
   max-width: 600px;
   margin: auto;
   padding-bottom: 15px;
 }
 .AnnouncementContainer {
-  background-color: rgb(128, 168, 255);
+  background-color: #6c757d;
   max-width: 600px;
   margin: auto;
   padding-bottom: 15px;
 }
 .NavBar {
-  background-color: rgba(128, 168, 255, 0.527);
+  background-color: #6c757d;
+  max-height: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 8px 16px;
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
   color: black;
   text-decoration: none;
 }
-.NavBar>Link {
+.NavBar a {
   text-decoration: none;
+}
+.NavBar a:visited {
+  color: black;
+}
+.NavBar a:hover {
+  color:rgba(0, 0, 0, 0.61);
+}
+.NavBar a:active {
+  background-color: rgba(0, 0, 0, 0.096);
 }
 .ListA>ul {
   list-style: none;
   margin: auto;
-  max-width: 350px;
   max-width: 350px;
   background-color: rgb(53, 133, 199);
   border-right: solid 3px rgb(215, 237, 255);
